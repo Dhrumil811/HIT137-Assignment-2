@@ -65,3 +65,4 @@ with open('warmest_and_coolest_station.txt', 'w') as f:
     f.write("\nCoolest Station(s):\n")
     for _, row in coolest_station.iterrows():
         f.write(f"{row['STATION_NAME']} (Min Temperature: {row['Min_Temperature']:.2f}°C)\n")
+        
