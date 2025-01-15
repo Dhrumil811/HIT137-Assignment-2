@@ -18,7 +18,7 @@ for file in csv_files:
 df_all = pd.concat(dfs, ignore_index=True)
 
 print(df_all.head())
-
+# just for check
 seasons = {
     'Spring': ['September', 'October', 'November'],
     'Summer': ['December', 'January', 'February'],
@@ -65,4 +65,3 @@ with open('warmest_and_coolest_station.txt', 'w') as f:
     f.write("\nCoolest Station(s):\n")
     for _, row in coolest_station.iterrows():
         f.write(f"{row['STATION_NAME']} (Min Temperature: {row['Min_Temperature']:.2f}°C)\n")
-        
